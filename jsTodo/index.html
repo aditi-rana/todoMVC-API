@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS - TODO!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <style>
+    body {
+        background-color: rgb(226, 218, 218);
+      }
+      #listid {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      li {
+        background-color: #fff;
+        height: 55px;
+        width: 550px;
+        position: relative;
+      }
+
+      li input[type="checkbox"] {
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      li input[type="text"] {
+        margin-left: 20px;
+        margin-top: 10px;
+        border: none;
+        float: left;
+        font-weight: lighter;
+        color: grey;
+        font-size: 20px;
+        width: 380px;
+      }
+
+      li input[type="button"] {
+        margin-right: 20px;
+        margin-top: 15px;
+        float: right;
+      }
+      .container {
+        height: 600px;
+      }
+      #task {
+        border: none;
+        height: 65px;
+        width: 480px;
+        margin-left: 20px;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 25px;
+      }
+      ::placeholder {
+        color: rgba(143, 86, 86, 0.356);
+      }
+      #text {
+        font-size: 90px;
+        font-weight: lighter;
+        color: rgb(240, 167, 167);
+      }
+      .todo {
+        background-color: #fff;
+        height: 65px;
+        width: 550px;
+      }
+      .icon {
+        color: rgba(172, 166, 166, 0.829);
+        margin-left: 20px;
+        font-size: 25px;
+      }
+      
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <center>
+      <span id="text">todos</span><br />
+      <div class="todo">
+        <i class="fas fa-angle-down icon" onclick="allstrike()"></i>
+        <input type="text" placeholder="What needs to be done?" id="task" />
+      </div>
+      <ul id="listid"></ul>
+
+    </center>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="./model.js"></script>
+  <script src="./view.js"></script>
+  <script src="./controller.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
